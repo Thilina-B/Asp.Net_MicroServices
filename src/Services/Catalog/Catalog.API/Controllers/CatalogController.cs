@@ -19,7 +19,7 @@ namespace Catalog.API.Controllers
         }
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Product>),(int)HttpStatusCode.OK)]
-        //action result for best practice comes with ok
+        //action result for best practice - comes with ok
         public async Task<ActionResult < IEnumerable<Product>>> GetProducts()
         {
             var products = await _repository.GetProducts();
